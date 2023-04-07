@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@200&family=Poppins:wght@300;600&family=Quicksand:wght@300;700&display=swap');
+
+:root {
+--hot-pink-fill: rgba(244, 66, 183);
+--blue-fill: rgba(66, 183, 244);
+--green-fill: rgba(100, 210, 144);
+--lavender-fill: rgba(219, 213, 242);
+--orange-fill: rgba(255, 192, 84);
+--yellow-fill: rgba(255, 252, 76);
+
+}
+
+#navbar{
+  background-color: #678A98;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_items{
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  justify-content: space-between;
+  padding-right: 150px;
+  font-size: 25px; 
+
+}
+
+
+#navbar a{
+  font-family: 'Poppins';
+  text-decoration: none;
+  color: white;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sticky{
+position: fixed;
+top: 0;
+width: 100vw;
+}
+
+#navbar a:hover{
+    animation-name: color-change;
+    animation-duration: 0.5s;
+    background-color:white;
+    color: #987567;
+}
+
+.navbarOffsetMargin{
+    padding-top: 45px;
+    }
+
+@keyframes color-change{
+from{background-color: #987567;}
+to{background-color: white;}
+}
+
+
+.welcome_section{
+  text-align: center;
+  background-color: #DACDDD;
+  width: 100vw;
+  height: 510px;
+  font-family: 'Poppins';
+  margin: auto;
+  padding-top: 275px;
+  color: #66524b;
+
+}
+
+#welcome_section h1{
+    font-size: 60px;
+}
+
+
+
+#welcome_section .test{
+    font-size: 35px;
+}
+
+
+.projects_title{
+  background-color: #white;
+  color: #66524b;
+    padding-top: 80px;
+    width: 100vw;
+    text-align: center;
+    }
+
+.projects_title .title{
+font-size: 30px;
+font-family: 'Poppins'
+}
+
+.grid-container {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 40vw;
+    grid-template-columns:
+    auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.grid-container .grid-item {
+  padding: 22px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.clear-button{
+margin-top: 50px;
+font-family: poppins;
+font-size: 20px;
+width: 100px;
+height: 50px;
+}
+
+.eraser-button{
+font-family: poppins;
+}
+
+.color-picker{
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+display: flex;
+align-items: center;
+width: 550px;
+}
+
+.btn{
+width: 50px;
+height: 50px;
+border: none;
+border-radius: 20%;
+}
+
+
+.eraser-button{
+width: 160px;
+height: 50px;
+font-size:25px;
+border-radius: 20%;
+}
+
+.pink-button{
+background-color: var(--hot-pink-fill);}
+
+.lavender-button{
+background-color: var(--lavender-fill);}
+
+.orange-button{
+background-color: var(--orange-fill);}
+
+.yellow-button{
+background-color: var(--yellow-fill);}
+
+
+.pink-fill{
+background-color: var(--hot-pink-fill);
+}
+.lavender-fill{
+background-color: var(--lavender-fill);
+}
+.orange-fill{
+background-color: var(--orange-fill);
+}
+.yellow-fill{
+background-color: var(--yellow-fill);
+}
+
+.erase{
+background-color: var(--eraser);
+}
+
+.button-border{
+border: 5px solid black}
